@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :friendships
 
   resources :users do
-    resources :posts, only: [:index]
+    resources :posts, :friendships, only: [:index]
   end
 
   # namespace :api do

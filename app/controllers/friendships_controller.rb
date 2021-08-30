@@ -5,7 +5,7 @@ class FriendshipsController < ApplicationController
   def index
     @friendships = Friendship.all
 
-    render json: @friendships
+    render json: @friendships, include: [:user, :friend]
   end
 
   # GET /friendships/1

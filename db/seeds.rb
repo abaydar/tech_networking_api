@@ -20,3 +20,8 @@
 
 # Comment.create(comment: "commenting on a post", user_id: 2, post_id: 1)
 
+# Friendship.create(user_id: 1, friend_id: 2)
+# Friendship.create(user_id: 1, friend_id: 12)
+# Friendship.create(user_id: 1, friend_id: 4)
+# Friendship.create(user_id: 1, friend_id: 5)
+Friendship.create(user_id: 12, friend_id: 5)
