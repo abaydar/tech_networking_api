@@ -15,10 +15,10 @@ class FriendshipsController < ApplicationController
 
   # POST /friendships
   def create
-    @friendship = Friendship.new(friendship_params)
+    @friendship = Friendship.find_or_create_by(friendship_params)
 
     if @friendship.save
-      render json: @friendship, status: :created, location: @friendship
+      render json: @friendship, include: [:user, :friend], status: :created, location: @friendship
     else
       render json: @friendship.errors, status: :unprocessable_entity
     end
