@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     @user = User.find_or_create_by(user_params)
 
     if @user.save
-      render json: @user, include: {posts: {include: :user}, friendships: {include: :friend}},  status: :created, location: @user
+      render json: @user, include: {posts: {include: :user}, friendships: {include: :friend}, friends: {include: {posts: {include: :user}}}},  status: :created, location: @user
     else
       render json: @user.errors, status: :unprocessable_entity
     end

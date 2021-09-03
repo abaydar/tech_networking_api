@@ -3,4 +3,6 @@ class Post < ApplicationRecord
   has_many :comments
 
   attribute :likes, :integer, default: 0
+  validates :title, :content, presence: true
+  
 end
