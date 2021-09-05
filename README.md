@@ -1,25 +1,16 @@
-# README
+# Tech Networking - API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the API used for the application: https://github.com/abaydar/tech_networking_client
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+To install this to your local computer, fork and clone this repository.  Once you are in the "tech_networking_api" directory, run `bundle install` to load all dependencies.  Next, run  `rails db:migrate` to add migrations to the database. Run `rails db:seed` to add data.  Run `rails s` to start the server
 
-* System dependencies
+## A Contributor's Guide
 
-* Configuration
+For pull requests, please visit: https://github.com/abaydar/tech_networking_api/pulls.
+For bug reports, please visit: https://github.com/abaydar/tech_networking_api/issues
 
-* Database creation
+## License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# tech_networking_api
+This application is available as open source under the terms in the MIT License, found here: https://opensource.org/licenses/MIT
