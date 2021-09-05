@@ -13,4 +13,4 @@ For bug reports, please visit: https://github.com/abaydar/tech_networking_api/is
 
 ## License
 
-This application is available as open source under the terms in the MIT License, found here: https://opensource.org/licenses/MIT
+This application is available as open source under the terms in the MIT License, found here: https://opensource.org/licenses/MIT 
