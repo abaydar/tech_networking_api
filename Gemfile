@@ -43,8 +43,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem 'figaro'
 gem 'jwt'
-
-# Gemfile
-gem 'ddtrace', require: 'ddtrace/auto_instrument'
-
-
